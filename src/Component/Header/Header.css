@@ -1,0 +1,108 @@
+
+.header_title{
+    font-weight: 700;
+    font-family: Lato,sans-serif;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 30px;
+    color: rgba(44,82,130,1);
+}
+.Star_Repo{
+    border-style: solid;
+    border-color: rgba(26,32,44,1);
+    padding: 0.15rem;
+    font-size: 20px;
+}
+.Fork_Repo{
+    border-style: solid;
+    border-color: rgba(26,32,44,1);
+    padding: 0.15rem;
+    font-size: 20px;
+}
+.Star_img{
+    vertical-align: bottom;
+    display: inline-block;
+    user-select: none;
+    padding: 2px;
+    margin-right: 8px;
+}
+.Fork_img{
+    vertical-align: bottom;
+    display: inline-block;
+    user-select: none;
+    padding: 2px;
+    margin-right: 8px;
+}
+.grid_box{
+    display: grid;
+    grid-template-columns: repeat(2,240px);
+    justify-content: center;
+    column-gap: 32px;
+}
+.font_family{
+    font-family: Roboto Mono,monospace;
+}
+
+
+
+
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .header_title{
+        font-size: 20px;
+    }
+    .grid_box{
+    display: grid;
+    grid-template-columns: repeat(2,160px);
+    justify-content: center;
+    column-gap: 10px;
+    }
+    .Star_Repo{
+        font-size: 15px;
+    }
+    .Fork_Repo{
+        font-size: 15px;
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 576px) {
+    .header_title{
+        font-size: 20px;
+    }
+    .grid_box{
+    display: grid;
+    grid-template-columns: repeat(2,160px);
+    justify-content: center;
+    column-gap: 10px;
+    }
+    .Star_Repo{
+        font-size: 15px;
+    }
+    .Fork_Repo{
+        font-size: 15px;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 375px) {
+    .header_title{
+        font-size: 20px;
+    }
+    .grid_box{
+    display: grid;
+    grid-template-columns: repeat(2,160px);
+    justify-content: center;
+    column-gap: 10px;
+    }
+    .Star_Repo{
+        font-size: 15px;
+    }
+    .Fork_Repo{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,129 @@
+.body{
+    font-family: Roboto Mono,monospace;
+}
+.About{
+    margin: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+.border-l-0 {
+    border-left-width: 0;
+    /* --border-opacity: 1;
+    border-color: #1a202c;
+    border-color: rgba(26,32,44,var(--border-opacity));
+    line-height: inherit;
+    color: inherit;
+    overflow: visible;
+    box-sizing: border-box;
+    border: 0 solid #e2e8f0;
+    width: 6rem; */
+
+}
+.border-r-0 {
+    border-right-width: 0;
+}
+.border-t-0 {
+    border-top-width: 0;
+}
+.Title_label{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Lato,sans-serif;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.outline_line{
+    outline: 0;
+}
+.m-r{
+    margin-right: 2.5rem;
+}
+.font_size{
+    font-size: 20px;
+}
+.grid_input{
+    display: grid;
+    grid-template-columns: repeat(2,235px);
+}
+.Subtitle_label{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Lato,sans-serif;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.mb-2{
+    margin-bottom: 2.5rem;
+}
+.name_input{
+    width: 20rem;
+}
+.subtitle_input{
+    width: 35rem;
+}
+.px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+.px-1_5{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.font_family{
+    font-family: Roboto Mono,monospace;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .grid_input{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .name_input{
+        width: 16rem;
+    }
+    .subtitle_input{
+        width: 16rem;
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 576px) {
+    .grid_input{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .name_input{
+        width: 16rem;
+    }
+    .subtitle_input{
+        width: 16rem;
+    }
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 375px) {
+    .grid_input{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .name_input{
+        width: 16rem;
+    }
+    .subtitle_input{
+        width: 16rem;
+    }
+  }

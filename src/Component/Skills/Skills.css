@@ -1,0 +1,153 @@
+.Skiils {
+    margin: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.relative-position {
+    display: flex;
+    position: relative;
+}
+
+.border-gray-900 {
+    --border-opacity: 1;
+    border-color: #1a202c;
+    border-color: rgba(26, 32, 44, var(--border-opacity));
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.grid-search {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40rem;
+}
+
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.subtitle-div {
+    font-size: 1.25rem;
+    font-family: Roboto Mono, monospace;
+    border-bottom: 1px solid black;
+}
+
+
+.text-gray-900 {
+    --text-opacity: 1;
+    color: #1a202c;
+    color: rgba(26, 32, 44, var(--text-opacity));
+}
+
+.py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+
+
+.grid-pro-section {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    padding-left: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.my-6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.w-h-img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.grid-pro-input {
+    display: grid;
+    grid-template-columns: 22px 1rem 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {}
+
+/* For medium devices */
+@media screen and (max-width: 576px) {
+    .grid-pro-section {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+        padding-left: 0px;
+    }
+
+    .grid-search {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+    }
+
+    .border-gray-900 {
+        --border-opacity: 1;
+        border-color: #1a202c;
+        border-color: rgba(26, 32, 44, var(--border-opacity));
+        width: 130px;
+        height: 30px;
+        font-size: 20px;
+    }
+    .w-h-img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 375px) {
+    .grid-pro-section {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+        padding-left: 0px;
+    }
+
+    .grid-search {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+    }
+
+    .border-gray-900 {
+        --border-opacity: 1;
+        border-color: #1a202c;
+        border-color: rgba(26, 32, 44, var(--border-opacity));
+        width: 130px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+    .w-h-img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
