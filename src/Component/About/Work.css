@@ -1,0 +1,84 @@
+.Work_label{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Lato,sans-serif;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.grid_inputs{
+    display: grid;
+    grid-template-columns: 25rem 20rem 20rem;
+    column-gap: 2rem;
+}
+.grid_inputs2{
+    display: grid;
+    grid-template-columns: 25rem 25rem;
+    column-gap: 2rem;
+}
+
+.px-1_5{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* .mr-8 {
+    margin-left: 5rem;
+    width: 15rem;
+}
+.w-input{
+    width: 20rem;
+} */
+
+.mb-10 {
+    margin-bottom: 2.5rem;
+}
+
+
+
+
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .grid_inputs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 2rem;
+      }
+      .grid_inputs2{
+        display: grid;
+        column-gap: 2rem;
+        grid-template-columns: repeat(1,1fr);
+      }
+}
+
+/* For medium devices */
+@media screen and (max-width: 576px) {
+    .grid_inputs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 2rem;
+      }
+      .grid_inputs2{
+        display: grid;
+        column-gap: 2rem;
+        grid-template-columns: repeat(1,1fr);
+      }
+}
+
+/* For small devices */
+@media screen and (max-width: 375px) {
+  .grid_inputs{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 2rem;
+  }
+  .grid_inputs2{
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: repeat(1,1fr);
+  }
+}
