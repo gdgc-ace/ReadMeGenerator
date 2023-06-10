@@ -25,7 +25,8 @@ export const Home = () => {
     Testing: [],
     Software: [],
     GameENgine: [],
-    Others: []
+    Others: [],
+    UserNames:[]
 
   }
   const getAboutData = (Name, subtitle_input1, title_input1) => {
@@ -63,12 +64,16 @@ export const Home = () => {
    data.PrefixArray=Prefixes
   }
 
+  const getUserNames=(UserNames)=>{
+   data.UserNames=UserNames
+  }
+
 
 
 
   return (
     <>
-      <GlobalProjectName.Provider value={{getProjectNames,getProjectLinks,getProjectPrefix}}>
+      <GlobalProjectName.Provider value={{getProjectNames,getProjectLinks,getProjectPrefix , getUserNames}}>
         <About getNameandSubtile={getAboutData} />
         <Skills getSkills={getSkillsData} />
         <Social />
