@@ -6,16 +6,16 @@ import './Work.css'
 
 
 export const Work = () => {
-  const [currWorkP, setcurrWorkP] = useState('🔭 I’m currently working on')
-  const [collaborate, setcollaborate] = useState('👯 I’m looking to collaborate on')
-  const [lookingHelp, setlookingHelp] = useState('🤝 I’m looking for help with')
-  const [currlearn, setcurrlearn] = useState('🌱 I’m currently learning')
-  const [askme, setaskme] = useState('💬 Ask me about')
-  const [reachme, setreachme] = useState('📫 How to reach me')
-  const [portfoilo, setportfoilo] = useState('👨‍💻 All of my projects are available at')
-  const [blog, setblog] = useState('📝 I regularly write articles on')
-  const [expinp, setexpinp] = useState('📄 Know about my experiences')
-  const [factinp, setfactinp] = useState('⚡ Fun fact')
+  // const [currWorkP, setcurrWorkP] = useState('🔭 I’m currently working on')
+  // const [collaborate, setcollaborate] = useState('👯 I’m looking to collaborate on')
+  // const [lookingHelp, setlookingHelp] = useState('🤝 I’m looking for help with')
+  // const [currlearn, setcurrlearn] = useState('🌱 I’m currently learning')
+  // const [askme, setaskme] = useState('💬 Ask me about')
+  // const [reachme, setreachme] = useState('📫 How to reach me')
+  // const [portfoilo, setportfoilo] = useState('👨‍💻 All of my projects are available at')
+  // const [blog, setblog] = useState('📝 I regularly write articles on')
+  // const [expinp, setexpinp] = useState('📄 Know about my experiences')
+  // const [factinp, setfactinp] = useState('⚡ Fun fact')
 
   const [prefix, setprefix] = useState(
     ['🔭 I’m currently working on',

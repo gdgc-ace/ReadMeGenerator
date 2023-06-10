@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Markdown.css'
 import { icons } from './skills'
 import { Link } from 'react-router-dom'
@@ -14,6 +14,8 @@ export const Markdown = () => {
       , FinalData.Software)
   }
   let skilllist2 = ['flutter', 'reactnative', 'firebase']
+
+ 
 
 
 
@@ -74,6 +76,7 @@ export const Markdown = () => {
                     <SubTitle subtitle={FinalData.subtitle} />
                     <DisplaySkills skills={skilllist} icons={icons} />
                     <DisplayAllWorks prefixArray={FinalData.PrefixArray} projectName={FinalData.ProjectNameArray} projectLinks={FinalData.ProjectLinksArray} />
+                    <DisplayAllSocial social={FinalData.UserNames} />
                   </>
               }
             </div>
@@ -174,6 +177,154 @@ const DisplayAllWorks = (prop) => {
     </>
   )
 }
+
+const DisplaySocial = (props) => {
+  const { username, base, icon , setisSocial } = props;
+
+  if (username) {
+    setisSocial(true)
+    return (
+      <>
+        {`<a href="${base}/${username}" target="blank"><img align="center" src="${icon}" alt="${username}" height="30" width="40" /></a>`}
+        <br />
+      </>
+    );
+  }
+  return '';
+};
+
+const DisplayAllSocial = (prop) => {
+
+  const { social } = prop
+  const [isSocial , setisSocial] = useState(false)
+  const iconBaseUrl =
+  'https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/';
+
+    return (
+
+
+      <>
+      {
+        isSocial ?
+        <>
+        <h2>Connect with me:</h2>
+        {'<p align="left">'}
+        </>
+        :
+        ''
+      }
+
+      <>
+        <DisplaySocial base="https://codepen.io" icon={`${iconBaseUrl}codepen.svg`} username={social[3]} setisSocial={setisSocial} />
+      </>
+      <>
+        <DisplaySocial base="https://dev.to" icon={`${iconBaseUrl}devto.svg`} username={social[2]} setisSocial={setisSocial}/>
+      </>
+      <>
+        <DisplaySocial base="https://twitter.com" icon={`${iconBaseUrl}twitter.svg`} username={social[1]} setisSocial={setisSocial}/>
+      </>
+      <>
+        <DisplaySocial
+          base="https://linkedin.com/in"
+          icon={`${iconBaseUrl}linked-in-alt.svg`}
+          username={social[6]}
+          setisSocial={setisSocial}/>
+      </>
+      <>
+        <DisplaySocial
+          base="https://stackoverflow.com/users"
+          icon={`${iconBaseUrl}stack-overflow.svg`}
+          username={social[5]}
+          setisSocial={setisSocial}/>
+      </>
+      <>
+        <DisplaySocial
+          base="https://codesandbox.com"
+          icon={`${iconBaseUrl}codesandbox.svg`}
+          username={social[4]}
+          setisSocial={setisSocial}/>
+      </>
+      <>
+        <DisplaySocial base="https://kaggle.com" icon={`${iconBaseUrl}kaggle.svg`} username={social[7]} setisSocial={setisSocial}/>
+      </>
+      <>
+        <DisplaySocial base="https://fb.com" icon={`${iconBaseUrl}facebook.svg`} username={social[8]} setisSocial={setisSocial}/>
+      </>
+      <>
+        <DisplaySocial base="https://instagram.com" icon={`${iconBaseUrl}instagram.svg`} username={social[9]} setisSocial={setisSocial}/>
+      </>
+      <>
+        <DisplaySocial base="https://dribbble.com" icon={`${iconBaseUrl}dribbble.svg`} username={social[10]} setisSocial={setisSocial}/>
+      </>
+      <>
+        <DisplaySocial base="https://www.behance.net" icon={`${iconBaseUrl}behance.svg`} username={social[11]} setisSocial={setisSocial}/>
+      </>
+      <>
+        <DisplaySocial base="https://hashnode.com" icon={`${iconBaseUrl}hashnode.svg`} username={social[12]} setisSocial={setisSocial}/>
+      </>
+      <>
+        <DisplaySocial base="https://medium.com" icon={`${iconBaseUrl}medium.svg`} username={social[13]} setisSocial={setisSocial}/>
+      </>
+      <>
+        <DisplaySocial base="https://www.youtube.com/c" icon={`${iconBaseUrl}youtube.svg`} username={social[14]} setisSocial={setisSocial}/>
+      </>
+      <>
+        <DisplaySocial
+          base="https://www.codechef.com/users"
+          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+          username={social[15]}
+          setisSocial={setisSocial}/>
+      </>
+      <>
+        <DisplaySocial
+          base="https://www.hackerrank.com"
+          icon={`${iconBaseUrl}hackerrank.svg`}
+          username={social[16]}
+          setisSocial={setisSocial}/>
+      </>
+      <>
+        <DisplaySocial
+          base="https://codeforces.com/profile"
+          icon={`${iconBaseUrl}codeforces.svg`}
+          username={social[17]}
+          setisSocial={setisSocial}/>
+      </>
+      <>
+        <DisplaySocial
+          base="https://www.leetcode.com"
+          icon={`${iconBaseUrl}leet-code.svg`}
+          username={social[18]}
+          setisSocial={setisSocial}/>
+      </>
+      <>
+        <DisplaySocial
+          base="https://www.hackerearth.com"
+          icon={`${iconBaseUrl}hackerearth.svg`}
+          username={social[20]}
+          setisSocial={setisSocial}/>
+      </>
+      <>
+        <DisplaySocial
+          base="https://auth.geeksforgeeks.org/user"
+          icon={`${iconBaseUrl}geeks-for-geeks.svg`}
+          username={social[21]}
+          setisSocial={setisSocial}/>
+      </>
+      <>
+        <DisplaySocial
+          base="https://www.topcoder.com/members"
+          icon={`${iconBaseUrl}topcoder.svg`}
+          username={social[19]}
+          setisSocial={setisSocial}/>
+      </>
+      <>
+        <DisplaySocial base="https://discord.gg" icon={`${iconBaseUrl}discord.svg`} username={social[22]} setisSocial={setisSocial}/>
+      </>
+      </>
+    );
+
+};
+
 
 const DisplaySkills = (props) => {
   const { skills } = props;
