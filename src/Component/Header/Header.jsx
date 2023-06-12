@@ -1,6 +1,5 @@
 import React from "react"
 import './Header.css'
-import { SmoothCorners } from 'react-smooth-corners'
 
 export const Header = () => {
     return (
