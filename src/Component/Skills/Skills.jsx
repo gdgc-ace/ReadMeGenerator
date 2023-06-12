@@ -69,7 +69,7 @@ export const Skills = (prop) => {
                 <div className="title mt-2 mb-4 px-1_5">
                     <div className="grid-search">
                         <div className='Title_label'>Skills</div>
-                        <input type="text" className="leading:none text-xs my-0 py-1 px-2 pr-8 sm:text-xl border-2 border-gray-900 focus:border-blue-700 placeholder-gray-700" placeholder="Search Skills" />
+                        {/* <input type="text" className="leading:none text-xs my-0 py-1 px-2 pr-8 sm:text-xl border-2 border-gray-900 focus:border-blue-700 placeholder-gray-700" placeholder="Search Skills" /> */}
                     </div>
                 </div>
                 <ProgrammingLanguages getPLData={handleProgramL}/>
